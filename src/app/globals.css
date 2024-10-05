@@ -2,7 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
-  background-color: #000319;
-  color: white;
+
+.inter{
+  font-family:var(--font-inter);
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.scrollable-div::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.scrollable-div {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }

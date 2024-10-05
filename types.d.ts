@@ -17,7 +17,7 @@ export type TestimonialType = {
 };
 
 export type ServicType = {
-  icon: React.ReactNode;
+  icon: string;
   heading: string;
   description: string;
 };
