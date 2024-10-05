@@ -26,7 +26,7 @@ const Hero = () => {
           Hi! I’m Yousuf, a Next.js Developer based in Pakistan.
         </p>
       </div>
-      <Button borderRadius="1rem" className="bg-[#1405295e]">
+      <Button>
         See my work{" "}
         <span>
           <FaArrowRight className=" -rotate-12 ml-2" />

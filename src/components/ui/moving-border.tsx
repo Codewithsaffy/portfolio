@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useRef } from "react";
 import {
   motion,
   useAnimationFrame,
@@ -7,7 +7,6 @@ import {
   useMotionValue,
   useTransform,
 } from "framer-motion";
-import { useRef } from "react";
 import { cn } from "@/lib/utils";
 
 export function Button({
@@ -22,29 +21,26 @@ export function Button({
 }: {
   borderRadius?: string;
   children: React.ReactNode;
-  as?: any;
+  as?: string | React.ElementType;
   containerClassName?: string;
   borderClassName?: string;
   duration?: number;
   className?: string;
-  [key: string]: any;
 }) {
   return (
     <Component
       className={cn(
-        "bg-transparent relative text-xl  h-16 w-40 p-[1px] overflow-hidden ",
+        "bg-transparent relative text-xl h-16 w-40 p-[1px] overflow-hidden",
         containerClassName
       )}
-      style={{
-        borderRadius: borderRadius,
-      }}
+      style={{ borderRadius }}
       {...otherProps}
     >
       <div
         className="absolute inset-0"
         style={{ borderRadius: `calc(${borderRadius} * 0.96)` }}
       >
-        <MovingBorder duration={duration} rx="30%" ry="30%">
+        <MovingBorder duration={duration} borderRadius={borderRadius}>
           <div
             className={cn(
               "h-20 w-20 opacity-[0.8] bg-[radial-gradient(var(--sky-500)_40%,transparent_60%)]",
@@ -72,18 +68,15 @@ export function Button({
 export const MovingBorder = ({
   children,
   duration = 2000,
-  rx,
-  ry,
+  borderRadius = "1.75rem",
   ...otherProps
 }: {
   children: React.ReactNode;
   duration?: number;
-  rx?: string;
-  ry?: string;
-  [key: string]: any;
+  borderRadius?: string;
 }) => {
-  const pathRef = useRef<any>();
-  const progress = useMotionValue<number>(0);
+  const pathRef = useRef<SVGRectElement>(null);
+  const progress = useMotionValue(0);
 
   useAnimationFrame((time) => {
     const length = pathRef.current?.getTotalLength();
@@ -114,13 +107,15 @@ export const MovingBorder = ({
         height="100%"
         {...otherProps}
       >
+        {/* Correct rect element with ref pointing to SVGGeometryElement */}
         <rect
-          fill="none"
           width="100%"
           height="100%"
-          rx={rx}
-          ry={ry}
-          ref={pathRef}
+          rx={borderRadius}
+          ry={borderRadius}
+          ref={pathRef} // Updated to point to correct ref type
+          fill="none"
+          stroke="transparent"
         />
       </svg>
       <motion.div
