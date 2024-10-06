@@ -6,7 +6,7 @@ import { FaArrowRight } from "react-icons/fa6";
 
 const Hero = () => {
   return (
-    <div className="h-[100vh] w-full inter rounded-md  flex flex-col justify-center items-center gap-10  antialiased relative overflow-hidden">
+    <div className="h-[100vh] w-full inter rounded-md pt-24 md:pt-0 flex flex-col justify-center items-center gap-10  antialiased relative overflow-hidden">
     
       <Spotlight fill="#CBACF9" className="-top-40 left-0 md:left-32 md:top-0" />
       <Spotlight fill="blue" className="-top-40 left-0 md:left-0 md:top-0" />

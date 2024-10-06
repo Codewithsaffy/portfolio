@@ -30,12 +30,13 @@ export function Button({
   return (
     <Component
       className={cn(
-        "bg-transparent relative text-xl h-16 w-40 p-[1px] overflow-hidden",
+        "relative text-lg md:text-xl h-16 w-40 md:w-48 p-[2px] overflow-hidden transition-transform duration-300 ease-in-out hover:scale-105", // Hover effect for scaling
         containerClassName
       )}
       style={{ borderRadius }}
       {...otherProps}
     >
+      {/* Moving border effect */}
       <div
         className="absolute inset-0"
         style={{ borderRadius: `calc(${borderRadius} * 0.96)` }}
@@ -43,16 +44,17 @@ export function Button({
         <MovingBorder duration={duration} borderRadius={borderRadius}>
           <div
             className={cn(
-              "h-20 w-20 opacity-[0.8] bg-[radial-gradient(var(--sky-500)_40%,transparent_60%)]",
+              "h-20 w-20 opacity-80 bg-[radial-gradient(circle,var(--sky-500)_40%,transparent_60%)]", // Radial gradient for border animation
               borderClassName
             )}
           />
         </MovingBorder>
       </div>
 
+      {/* Inner button content */}
       <div
         className={cn(
-          "relative bg-slate-900/[0.8] border border-slate-800 backdrop-blur-xl text-white flex items-center justify-center w-full h-full text-sm antialiased",
+          "relative bg-slate-900/[0.8] border border-slate-800 backdrop-blur-xl text-white flex items-center justify-center w-full h-full text-sm antialiased transition-colors duration-300 hover:bg-slate-800/90", // Transition background on hover
           className
         )}
         style={{
@@ -107,13 +109,12 @@ export const MovingBorder = ({
         height="100%"
         {...otherProps}
       >
-        {/* Correct rect element with ref pointing to SVGGeometryElement */}
         <rect
           width="100%"
           height="100%"
           rx={borderRadius}
           ry={borderRadius}
-          ref={pathRef} // Updated to point to correct ref type
+          ref={pathRef}
           fill="none"
           stroke="transparent"
         />

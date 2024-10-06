@@ -4,12 +4,12 @@ import testimonials from "@/data/testinominal";
 
 const Testinominal = () => {
   return (
-    <div className="w-full flex md:mt-10 flex-col items-center">
+    <div className="z-10 w-full flex-col flex  items-center gap-10 md:gap-20 mx-auto px-4  md:px-8 lg:px-16 py-16">
       <h2 className="text-4xl text-center z-10 font-bold">
         Kind words from <span className="text-[#CBACF0]">satisfied clients</span>
       </h2>
       <InfiniteMovingCards
-      className="mt-10 lg:mt-20"
+      className=""
         items={testimonials}
         direction="right"
         speed="slow"
