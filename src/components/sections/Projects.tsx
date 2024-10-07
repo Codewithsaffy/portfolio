@@ -4,7 +4,7 @@ import ProjectCard from "../smallComp/ProjectCard";
 
 const Projects = () => {
   return (
-    <div className="min-h-screen z-10 w-full flex-col flex items-center gap-10 md:gap-20 mx-auto px-4 md:px-8 lg:px-16 py-16">
+    <div id="projects" className="min-h-screen z-10 w-full flex-col flex items-center gap-10 md:gap-20 mx-auto px-4 md:px-8 lg:px-16 py-16">
       <h2 className="text-3xl sm:text-4xl font-bold z-10 text-center">
         Highlights from Our Latest{" "}
         <span className="text-[#c7abf0]">Projects</span>

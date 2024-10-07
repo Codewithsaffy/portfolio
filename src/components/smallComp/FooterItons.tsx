@@ -2,63 +2,50 @@ import React from "react";
 import { FloatingDock } from "@/components/ui/floating-dock";
 import {
   IconBrandGithub,
-  IconBrandX,
-  IconExchange,
-  IconHome,
-  IconNewSection,
-  IconTerminal2,
+  IconBrandLinkedin,
+  IconBrandInstagram,
+  IconPhone,
 } from "@tabler/icons-react";
+import { FaAngleDoubleUp } from "react-icons/fa";
 
 export function SocialIcons() {
   const links = [
     {
       title: "Home",
       icon: (
-        <IconHome className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <FaAngleDoubleUp className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
+      href: "#home",
     },
 
     {
-      title: "Products",
+      title: "LinkdIn",
       icon: (
-        <IconTerminal2 className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <IconBrandLinkedin className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
-    },
-    {
-      title: "Components",
-      icon: (
-        <IconNewSection className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-      ),
-      href: "#",
-    },
-    {
-      title: "Changelog",
-      icon: (
-        <IconExchange className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-      ),
-      href: "#",
-    },
-
-    {
-      title: "Twitter",
-      icon: (
-        <IconBrandX className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-      ),
-      href: "#",
+      href: "https://www.linkedin.com/in/yousuf-khan-4077192ba/",
     },
     {
       title: "GitHub",
       icon: (
         <IconBrandGithub className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
+      href: "https://github.com/Codewithsaffy",
+    },
+    {
+      title: "Instagram",
+      icon: (
+        <IconBrandInstagram className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+      ),
+      href: "https://www.instagram.com/codewithsaffy/",
+    },
+    {
+      title: "Phone",
+      icon: (
+        <IconPhone className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+      ),
+      href: "https://wa.me/+923152799576",
     },
   ];
-  return (
-      <FloatingDock
-        items={links}
-      />
-  );
+  return <FloatingDock items={links} />;
 }

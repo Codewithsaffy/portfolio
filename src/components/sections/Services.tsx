@@ -4,7 +4,10 @@ import services from "@/data/services";
 
 const Services = () => {
   return (
-    <div className="z-10 w-full min-h-screen flex-col flex  items-center gap-10 md:gap-20 mx-auto px-4  md:px-8 lg:px-16 py-16 bg-[#000000]  ">
+    <section
+      id="services"
+      className="z-10 w-full min-h-screen flex-col flex  items-center gap-10 md:gap-20 mx-auto px-4  md:px-8 lg:px-16 py-16 bg-[#000000]  "
+    >
       <h2 className="md:text-4xl text-4xl  z-10 text-center font-bold">
         My <span className="text-[#CBACF9]">Services</span>
       </h2>
@@ -13,7 +16,7 @@ const Services = () => {
           return <ServiceCard key={idx} service={ser} />;
         })}
       </div>
-    </div>
+    </section>
   );
 };
 

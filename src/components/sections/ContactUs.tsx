@@ -4,7 +4,7 @@ import { SocialIcons } from "../smallComp/FooterItons";
 
 const ContactUs = () => {
   return (
-    <div className="flex-col gap-10 md:gap-20 pb-2 justify-between  flex items-center px-4 pt-10 z-10 relative">
+    <section className="flex-col gap-10 md:gap-20 pb-2 justify-between  flex items-center px-4 pt-10 z-10 relative">
       <div className="z-10 md:w-[500px] w-full flex flex-col gap-4 justify-center items-center">
         <h2 className="text-3xl sm:text-4xl font-bold text-center -tracking-tighter">
           Ready to take <span className="text-[#CBACF9]">your</span> digital
@@ -14,7 +14,7 @@ const ContactUs = () => {
           Reach out to me today and let&apos;s discuss how I can help you
           achieve your goals
         </p>
-        <button className="relative rounded-xl mt-6 bg-slate-900/[0.6] border border-slate-800 backdrop-blur-sm py-4 px-6 gap-2 text-white flex justify-center items-center transition-all duration-300 ease-in-out hover:bg-slate-800/90 hover:border-slate-600 hover:scale-105">
+        <button className="relative rounded-xl mt-6 bg-slate-900/[0.6] border border-slate-800 backdrop-blur-sm py-4 px-4 gap-2 text-white flex justify-center items-center transition-all duration-300 ease-in-out hover:bg-slate-800/90 hover:border-slate-600 hover:scale-105">
           Contact Me Now
           <FaArrowRight className="ml-2 transition-transform duration-300 ease-in-out hover:translate-x-1 hover:-rotate-45" />
         </button>
@@ -25,7 +25,7 @@ const ContactUs = () => {
         </p>
         <SocialIcons />
       </div>
-    </div>
+    </section>
   );
 };
 

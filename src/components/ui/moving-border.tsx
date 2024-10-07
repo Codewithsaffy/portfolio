@@ -10,7 +10,7 @@ import {
 import { cn } from "@/lib/utils";
 
 export function Button({
-  borderRadius = "1.75rem",
+  borderRadius = "1rem",
   children,
   as: Component = "button",
   containerClassName,
@@ -30,7 +30,7 @@ export function Button({
   return (
     <Component
       className={cn(
-        "relative text-lg md:text-xl h-16 w-40 md:w-48 p-[2px] overflow-hidden transition-transform duration-300 ease-in-out hover:scale-105", // Hover effect for scaling
+        "relative text-lg md:text-xl h-16 w-40  p-[2px] overflow-hidden transition-transform duration-300 ease-in-out hover:scale-105", 
         containerClassName
       )}
       style={{ borderRadius }}
