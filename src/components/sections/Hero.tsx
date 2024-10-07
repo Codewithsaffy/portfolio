@@ -11,7 +11,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="h-[100vh] w-full inter rounded-md pt-24 md:pt-0 flex flex-col justify-center items-center gap-10 antialiased relative overflow-hidden"
+      className="h-[100vh] w-full inter rounded-md pt-20 pb-10 md:pt-0 flex flex-col  justify-center items-center gap-10 antialiased relative overflow-hidden"
     >
       <motion.div
         initial={{ opacity: 0, scale: 0.8 }}
@@ -30,7 +30,7 @@ const Hero = () => {
       </motion.div>
 
       <motion.div
-        className="flex justify-end flex-col px-6 lg:pt-20 text-center lg:w-[80%] items-center gap-4"
+        className="flex justify-end flex-col px-6 pt-0 lg:pt-20 text-center lg:w-[80%] items-center gap-4"
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
