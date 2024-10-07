@@ -49,8 +49,8 @@ const About = () => {
             />
           </div>
 
-          <div className="h-56 lg:h-[225px] rounded-2xl bg-gradient-to-r from-[#0C0E23] to-[#1A1C31] shadow-lg p-8 flex sm:flex-row flex-col justify-between z-10 items-center gap-6 transition-all duration-500 hover:scale-105 hover:bg-gradient-to-r hover:from-[#1A1C31] hover:to-[#0C0E23]">
-            <div className="w-full">
+          <div className="h-56 lg:h-[225px] rounded-2xl bg-gradient-to-r from-[#0C0E23] to-[#1A1C31] shadow-lg p-8 flex sm:flex-row flex-col justify-between z-10 items-center gap-6 transition-all duration-500 hover:scale-105 hover:bg-gradient-to-r  hover:from-[#1A1C31] hover:to-[#0C0E23]">
+            <div className="w-full text-center">
               <p className="text-[#CBACF9] text-sm">Always aiming to improve</p>
               <h2 className="text-2xl sm:text-3xl font-bold text-white">My Tech Stack</h2>
             </div>
