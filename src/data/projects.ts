@@ -3,7 +3,7 @@ import { ProjectType } from "../../types";
 const projects: ProjectType[] = [
   {
     name: "Task Manager App",
-    image:"/project-images/task-manager.png",
+    image: "/project-images/task-manager.png",
     icons: [
       "/logos/next-js.svg",
       "/logos/react-2.svg",
@@ -12,13 +12,13 @@ const projects: ProjectType[] = [
       "/logos/mongodb-icon-1.svg",
     ],
     gitHub: "url",
-    link: "url",
+    link: "https://task-manager-five-swart.vercel.app/",
     description:
-      "Boost productivity with an intuitive task manager for seamless organization and collaboration.",
+      "Enhance your productivity with a sleek task manager designed for seamless organization and collaborative teamwork, boosting your efficiency.",
   },
   {
     name: "Resume Builder with AI",
-    image:"/project-images/resume-builder.png",
+    image: "/project-images/resume-builder.png",
     icons: [
       "/logos/next-js.svg",
       "/logos/google-gemini-icon.webp",
@@ -27,13 +27,13 @@ const projects: ProjectType[] = [
       "/logos/authjs.png",
     ],
     gitHub: "url",
-    link: "url",
+    link: "https://airesumebuilder-six.vercel.app/",
     description:
-      "Create standout resumes effortlessly with AI-driven designs for a competitive edge in job hunting.",
+      "Effortlessly craft professional resumes using AI-powered designs, giving you a competitive edge in your job search with visually stunning layouts.",
   },
   {
     name: "Beautiful Music Library",
-    image:"/project-images/music-library.png",
+    image: "/project-images/music-library.png",
     icons: [
       "/logos/next-js.svg",
       "/logos/react-2.svg",
@@ -41,53 +41,45 @@ const projects: ProjectType[] = [
       "/logos/aceternity.avif",
       "/logos/framer-motion.svg",
     ],
-    gitHub: "url",
-    link: "url",
+    gitHub: "#",
+    link: "https://musiclibrary-three.vercel.app/",
     description:
-      "Explore and organize your music collection in a visually stunning and user-friendly interface.",
+      "Immerse yourself in an intuitive music library, offering an elegant and visually appealing way to explore and organize your favorite tracks.",
   },
   {
     name: "Amazon Homepage Clone",
-    image:"/project-images/amazon-clone.png",
+    image: "/project-images/amazon-clone.png",
     icons: [
       "/logos/html-1.svg",
       "/logos/css-3.svg",
       "/logos/logo-javascript.svg",
     ],
     gitHub: "url",
-    link: "url",
+    link: "https://amazon-clone-five-psi.vercel.app/",
     description:
-      "Replicate a top-tier shopping experience with our expertly designed Amazon homepage clone project.",
+      "Experience an expertly crafted Amazon homepage clone that replicates the sleek design and user-friendly shopping experience of the real site.",
   },
   {
-    name: "Task Manager App",
-    image:"/project-images/task-manager.png",
-    icons: [
-      "/logos/next-js.svg",
-      "/logos/react-2.svg",
-      "/logos/tailwind-css-2.svg",
-      "/logos/typescript.svg",
-      "/logos/mongodb-icon-1.svg",
-    ],
+    name: "Netflix Clone",
+    image: "/project-images/netflex.png",
+    icons: ["/logos/html-1.svg", "/logos/css-3.svg"],
     gitHub: "url",
-    link: "url",
+    link: "https://netflixclone-dusky-iota.vercel.app/",
     description:
-      "Boost productivity with an intuitive task manager for seamless organization and collaboration.",
+      "Dive into a seamless Netflix clone project, designed to replicate the dynamic interface and smooth user experience of the original platform.",
   },
   {
-    name: "Beautiful Music Library",
-    image:"/project-images/music-library.png",
+    name: "Weather App",
+    image: "/project-images/weather-app.png",
     icons: [
-      "/logos/next-js.svg",
-      "/logos/react-2.svg",
-      "/logos/typescript.svg",
-      "/logos/aceternity.avif",
-      "/logos/framer-motion.svg",
+      "/logos/html-1.svg",
+      "/logos/css-3.svg",
+      "/logos/logo-javascript.svg",
     ],
     gitHub: "url",
-    link: "url",
+    link: "https://weather-app-beryl-one-62.vercel.app/",
     description:
-      "Explore and organize your music collection in a visually stunning and user-friendly interface.",
+      "Stay informed with this beautiful weather app, offering accurate forecasts in a visually appealing and easy-to-navigate interface for all users.",
   },
 ];
 

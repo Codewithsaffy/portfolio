@@ -12,21 +12,21 @@ const Hero = () => {
     <section
       id="home"
       className="h-[100vh] w-full inter rounded-md pt-20 pb-10 md:pt-0 flex flex-col  justify-center items-center gap-10 antialiased relative overflow-hidden"
-    >
+      >
+      <Spotlight
+        fill="#CBACF9"
+        className="-top-40 left-0 md:left-32 md:top-0"
+      />
+      <Spotlight fill="blue" className="-top-40 left-0 md:left-0 md:top-0" />
+      <Spotlight
+        fill="blue"
+        className="-top-40 left-0 md:left-[100%] md:top-0"
+      />
       <motion.div
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1, ease: "easeInOut" }}
       >
-        <Spotlight
-          fill="#CBACF9"
-          className="-top-40 left-0 md:left-32 md:top-0"
-        />
-        <Spotlight fill="blue" className="-top-40 left-0 md:left-0 md:top-0" />
-        <Spotlight
-          fill="blue"
-          className="-top-40 left-0 md:left-[100%] md:top-0"
-        />
       </motion.div>
 
       <motion.div
