@@ -1,20 +1,10 @@
-"use client";
 import Image from "next/image";
-import React, { useState } from "react";
 import Button from "../ui/Button";
-import { BackgroundGradientAnimation } from "../ui/background-gradient-animation";
-import { FaCopy, FaCheck } from "react-icons/fa6";
+import CopyEmail from "../CopyEmail";
+
 
 const About = () => {
-  const [isCopied, setIsCopied] = useState(false);
-
-  const copyEmail = () => {
-    navigator.clipboard.writeText("codewithsaffy@gmail.com");
-    setIsCopied(true);
-    setTimeout(() => {
-      setIsCopied(false);
-    }, 2000);
-  };
+ 
 
   return (
     <section id="about" className="min-h-screen w-full mx-auto px-4 md:px-8 lg:px-16 py-12 z-10">
@@ -85,20 +75,7 @@ const About = () => {
             />
           </div>
 
-          <div>
-            <BackgroundGradientAnimation className="flex flex-col items-center justify-center h-48 p-8 rounded-2xl shadow-lg transition-all duration-500 hover:scale-105">
-              <h2 className="text-xl font-bold text-center text-white">
-                Want to start a project together?
-              </h2>
-              <div
-                className="flex items-center gap-4 py-2 px-4 bg-black/80 rounded-lg mt-4 cursor-pointer hover:bg-black hover:text-[#CBACF9] transition-all duration-300"
-                onClick={copyEmail}
-              >
-                <p className="text-[#CBACF9]">Copy my email address</p>
-                {isCopied ? <FaCheck className="text-green-500"  /> : <FaCopy  />}
-              </div>
-            </BackgroundGradientAnimation>
-          </div>
+       <CopyEmail/>
         </div>
 
         <div className="col-span-1 lg:col-span-8 flex flex-col justify-center overflow-hidden h-[200px] md:h-[334px] rounded-2xl bg-gradient-to-r from-[#0C0E23] to-[#1A1C31] shadow-lg relative transition-all duration-500 hover:scale-105 hover:bg-gradient-to-r hover:from-[#1A1C31] hover:to-[#0C0E23]">
