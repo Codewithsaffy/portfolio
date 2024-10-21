@@ -15,8 +15,8 @@ export default function Header() {
       icon: <FaRegUser className="h-4 w-4 text-neutral-500 dark:text-white" />,
     },
     {
-      name: "Projects",
-      link: "#projects",
+      name: "Blog",
+      link: "/blog",
       icon: (
         <GoProjectSymlink className="h-4 w-4 text-neutral-500 dark:text-white" />
       ),
@@ -38,7 +38,9 @@ export default function Header() {
   console.log(path);
   return (
     <div className="relative w-full">
-      {path !== "/contact" && <FloatingNav navItems={navItems} />}
+      {path !== "/contact" && path !== "/blog" && (
+        <FloatingNav navItems={navItems} />
+      )}
     </div>
   );
 }
