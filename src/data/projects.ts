@@ -27,7 +27,7 @@ const projects: ProjectType[] = [
       "/logos/authjs.png",
     ],
     gitHub: "url",
-    link: "https://airesumebuilder-six.vercel.app/",
+    link: "https://resumebuilder-drab.vercel.app/",
     description:
       "Effortlessly craft professional resumes using AI-powered designs, giving you a competitive edge in your job search with visually stunning layouts.",
   },
