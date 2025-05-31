@@ -5,7 +5,8 @@ import Link from "next/link";
 
 const ContactUs = () => {
   return (
-    <section className="flex-col gap-10 md:gap-20 pb-2 justify-between  flex items-center px-4 pt-10 z-10 relative">
+    <section className="flex-col gap-10 bg-grid-white/[0.08]  shadow-[inset_2px_2px_20px_20px_#000319] md:gap-20 pb-2 justify-between  flex items-center px-4 pt-10 z-10 relative">
+
       
       <div className="z-10 md:w-[500px] w-full flex flex-col gap-4 justify-center items-center">
         <h2 className="text-3xl sm:text-4xl font-bold text-center -tracking-tighter">

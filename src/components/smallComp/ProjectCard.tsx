@@ -15,15 +15,15 @@ const ProjectCard = ({
 }) => {
   return (
     <div
-      className={`w-full sm:w-[350px] p-4 rounded-lg border border-dark-accent/30 z-10 bg-gradient-to-r from-[#04071D] to-[#0C0E23] flex flex-col gap-4 ${className} transition-all duration-300 ease-in-out transform hover:scale-105`}
+      className={`w-full sm:w-[400px] sm:h-[420px] p-4 rounded-lg border border-dark-accent/30 z-10 bg-gradient-to-r from-[#04071D] to-[#0C0E23] flex flex-col gap-4 ${className} transition-all duration-300 ease-in-out transform hover:scale-105`}
     >
       <div className="bg-gradient-to-r h-[200px] rounded-lg overflow-hidden from-[#13162D] to-[#404793] relative">
         <Image
           className="absolute rounded-lg translate-x-[12%] h-[180px] bottom-[-15px] rotate-[356deg]"
           src={data.image}
           alt={data.name}
-          width={250}
-          height={180}
+          width={300}
+          height={300}
         />
       </div>
 
@@ -53,6 +53,7 @@ const ProjectCard = ({
             <div className="p-2 rounded-full flex justify-center items-center gap-1 text-blue-500 transition-transform duration-300 ease-in-out transform hover:scale-110">
               <Link
                 href={data.link}
+                target="_blank"
                 className="hover:cursor-pointer flex gap-1 justify-center items-center"
               >
                 <p>view</p>

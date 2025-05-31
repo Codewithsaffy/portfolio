@@ -1,4 +1,3 @@
-import React from "react";
 
 export type ProjectType = {
   name: string;
@@ -6,7 +5,9 @@ export type ProjectType = {
   image: string;
   link: string;
   gitHub: string;
+  featured:boolean;
   icons: string[];
+  tags:string[]
 };
 
 export type TestimonialType = {

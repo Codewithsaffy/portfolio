@@ -3,8 +3,6 @@
 import { useState } from "react";
 import axios from "axios";
 import { BackgroundBeams } from "@/components/ui/background-beams";
-import { FaArrowLeft } from "react-icons/fa6";
-import Link from "next/link";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -79,9 +77,7 @@ const ContactForm = () => {
 
   return (
     <div className="min-h-screen flex items-center lg:items-end justify-center pt-24 px-4 pb-10 relative bg-[#000214]">
-      <Link href={"/"} className="absolute flex hover:cursor-pointer z-10 justify-center items-center top-2 left-2 p-4 border border-white rounded-full bg-[#CBACF9] text-white">
-        <FaArrowLeft />
-      </Link>
+
             <BackgroundBeams />
 
       <div className="border border-dark-accent/30 text-[#CBAFC9]  z-10 bg-gradient-to-r from-[#04071D] to-[#0C0E23 shadow-lg rounded-lg p-8 w-full max-w-lg">
