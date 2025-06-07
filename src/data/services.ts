@@ -9,12 +9,12 @@ const services: ServicType[] = [
     description: "Building tailored web applications with Next.js for better performance and user experience."
   },
   {
-    heading: "Frontend Development",
+    heading: "Full stack Development",
     icon: "/services-images/frontend-engineer.png",
     description: "Creating responsive and user-friendly interfaces that engage and delight users."
   },
   {
-    heading: "API Integration",
+    heading: "AI Integration",
     icon: "/services-images/api-logo.png",
     description: "Connecting your applications with APIs for improved functionality and seamless performance."
   },

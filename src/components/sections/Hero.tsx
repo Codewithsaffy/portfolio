@@ -30,14 +30,14 @@ const Hero = () => {
       </motion.div>
 
       <motion.div
-        className="flex justify-end flex-col px-6 pt-0 lg:pt-20 text-center lg:w-[80%] items-center gap-4 "
+        className="flex justify-end flex-col px-4 pt-0 lg:pt-20 text-center lg:w-[80%] items-center gap-4 "
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
 
         <TextGenerateEffect
-          className="text-[36px] sm:text-[41px] lg:text-5xl font-bold"
+          className="text-[33px] sm:text-[41px] lg:text-5xl font-bold"
           words="  Full-Stack Next.js & AI Developer for Businesses Worldwide"
         />
 

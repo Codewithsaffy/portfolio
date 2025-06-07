@@ -3,10 +3,10 @@ import Button from "../ui/Button";
 
 const About = () => {
   return (
-    <section id="about" className="min-h-screen w-full mx-auto px-6 md:px-12 lg:px-20 py-16 z-10">
+    <section id="about" className="min-h-screen w-full mx-auto px-6 md:px-12 lg:px-20 py-8 md:py-16 z-10">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 w-full mb-12">
         {/* Left Section */}
-        <div className="col-span-1 bg-gradient-to-br from-[#0A0C1D] to-[#1A1C31] relative lg:col-span-7 w-full h-full md:h-96 lg:h-[500px] rounded-3xl shadow-xl p-10 flex flex-col gap-6 transition-all duration-500 hover:scale-105 hover:bg-gradient-to-br hover:from-[#1A1C31] hover:to-[#0A0C1D]">
+        <div className="col-span-1 bg-gradient-to-br from-[#0A0C1D] to-[#1A1C31] relative lg:col-span-7 w-full h-full md:h-96 lg:h-[500px] rounded-3xl shadow-xl p-4 mg:p-8 lg:p-10 flex flex-col gap-6 transition-all duration-500 hover:scale-105 hover:bg-gradient-to-br hover:from-[#1A1C31] hover:to-[#0A0C1D]">
           <h2 className="text-3xl md:text-5xl font-extrabold text-white z-10 leading-tight">
             About <span className="text-[#A78BFA]">Me</span>
           </h2>
@@ -19,7 +19,7 @@ const About = () => {
 
         {/* Right Section */}
         <div className="col-span-1 lg:col-span-5 flex flex-col gap-8">
-          <div className="h-60 lg:h-[230px] rounded-3xl bg-gradient-to-br from-[#0A0C1D] to-[#1A1C31] shadow-xl p-8 flex flex-col justify-between relative transition-all duration-500 hover:scale-105 hover:bg-gradient-to-br hover:from-[#1A1C31] hover:to-[#0A0C1D]">
+          <div className="h-52 md:h-60 lg:h-[230px] rounded-3xl bg-gradient-to-br from-[#0A0C1D] to-[#1A1C31] shadow-xl p-4 md:p-8 flex flex-col justify-between relative transition-all duration-500 hover:scale-105 hover:bg-gradient-to-br hover:from-[#1A1C31] hover:to-[#0A0C1D]">
             <h2 className="text-2xl font-bold text-white leading-tight">
               I am highly adaptable & open to collaboration
             </h2>
@@ -33,7 +33,7 @@ const About = () => {
           </div>
 
           {/* Tech Stack Section */}
-          <div className="h-60 lg:h-[230px] z-10 rounded-3xl bg-gradient-to-br from-[#0A0C1D] to-[#1A1C31] shadow-xl p-8 flex flex-col sm:flex-row justify-between items-center gap-6 transition-all duration-500 hover:scale-105 hover:bg-gradient-to-br hover:from-[#1A1C31] hover:to-[#0A0C1D]">
+          <div className="h-52 md:h-60 lg:h-[230px] z-10 rounded-3xl bg-gradient-to-br from-[#0A0C1D] to-[#1A1C31] shadow-xl p-4 md:p-8 flex flex-col sm:flex-row justify-between items-center gap-4 md:gap-6 transition-all duration-500 hover:scale-105 hover:bg-gradient-to-br hover:from-[#1A1C31] hover:to-[#0A0C1D]">
             <div className="w-full text-center">
               <h2 className="text-2xl sm:text-3xl font-bold text-white">Tech Stack</h2>
             </div>
